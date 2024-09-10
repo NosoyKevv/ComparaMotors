@@ -19,7 +19,7 @@ React.useEffect(() => {
         element.classList.remove("light");
         element.classList.remove("dark");
     }
-})
+})//prueba
 
 
   return (
