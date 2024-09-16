@@ -1,6 +1,7 @@
 import React from 'react'
 import { IoMdSearch } from "react-icons/io"
 import { FaShoppingCart } from "react-icons/fa"
+import { FaCaretDown } from 'react-icons/fa';
 import DarkMode from './DarkMode'
 const MenuLinks = [
     {
@@ -22,6 +23,25 @@ const MenuLinks = [
         id: 4,
         name: "Blogs",
         link: "/#blog",
+    },
+]
+
+const DropDownLinks = [
+
+    {
+        id: 1,
+        name: "Mejores Productos",
+        link: "/#",
+    },
+    {
+        id: 2,
+        name: "Mas Vendidos",
+        link: "/#",
+    },
+    {
+        id: 3,
+        name: "Mejor Calificados",
+        link: "/#",
     },
 ]
 const Navbar = () => {
@@ -53,15 +73,53 @@ const Navbar = () => {
                                                     font-semibold 
                                                     text-gray-500
                                                     hover:text-black 
-                                                    dark:gover:text-white 
+                                                    dark:hover:text-white 
                                                     duration-200"
                                         >
                                             {" "}
                                             {data.name}
                                         </a>
                                     </li>
-                                ))
-                            }
+                                ))}
+                                {/* Dropdown */}
+                            <li className="relative cursor-pointer group">
+                                <a href="#" className="flex items-center 
+                                                       ap-[2px] font-semibold 
+                                                       text-gray-500 
+                                                       dark:hover:text-white 
+                                                       py-2">
+                                    quick links
+                                    <span>
+                                    <FaCaretDown className="group-hover:rotate-180 duration-300" />
+                                    </span> 
+                                </a>
+                                {/* Dropdown listas */}
+                                <div className="absolute z-[9999] 
+                                                hidden group-hover:block w-[200px] 
+                                                rounded-md bg-white shadow-md
+                                                dark:bg-gray-900 p-2 dark:text-white ">
+                                    <ul className="space-y-2">
+                                    {
+                                        DropDownLinks.map((data, index) => (
+                                            <li>
+                                                <a className="text-gray-500
+                                                              dark:hover:text-white
+                                                              duration-200
+                                                              inline-block w-full
+                                                              p-2 hover:bg-primary/20
+                                                              rounded-md 
+                                                              font-semibold" 
+                                                
+
+                                                href={data.link}>{data.name}
+                                                </a>
+                                            </li>
+                                        ))
+                                    }
+                                    </ul>
+                                </div>
+
+                            </li>
                         </ul>
                     </div>
                 </div>
