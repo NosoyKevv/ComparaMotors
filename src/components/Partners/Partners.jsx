@@ -1,6 +1,6 @@
 import React from 'react'
-import brand1 from '../../assets/Brand/2.png'
-import brand2 from '../../assets/Brand/4.png'
+import brand1 from '../../assets/brand/2.png'
+import brand2 from '../../assets/brand/4.png'
 const Partners = () => {
   return (
     <div className='py-8 mt-24 hidden md:block bg-gray-200 dark:bg-white/10 '>
