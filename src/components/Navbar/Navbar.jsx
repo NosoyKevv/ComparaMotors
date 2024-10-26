@@ -11,19 +11,15 @@ const MenuLinks = [
     },
     {
         id: 2,
-        name: "Shope",
+        name: "Tienda",
         link: "/#shop",
     },
     {
         id: 3,
-        name: "About",
+        name: "Acerca de",
         link: "/#about",
     },
-    {
-        id: 4,
-        name: "Blogs",
-        link: "/#blog",
-    },
+
 ]
 
 const DropDownLinks = [
@@ -88,7 +84,7 @@ const Navbar = () => {
                                                        text-gray-500 
                                                        dark:hover:text-white 
                                                        py-2">
-                                    quick links
+                                    Importante
                                     <span>
                                     <FaCaretDown className="group-hover:rotate-180 duration-300" />
                                     </span> 

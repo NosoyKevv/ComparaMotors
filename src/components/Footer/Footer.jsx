@@ -33,11 +33,11 @@ const Footer = () => {
             </div>
             {/*SOCIAL LINKS*/}
             <div className='flex items-center gap-3 mt-6'>
-              <a href="#">
+              <a href="https://www.instagram.com/comparamotors?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                 <FaInstagram className='text-3xl
                              hover:text-primary duration-300'/>
               </a>
-              <a href="#">
+              <a href="https://www.facebook.com/comparamotors/">
                 <FaFacebook className='text-3xl
                              hover:text-primary duration-300'/>
               </a>

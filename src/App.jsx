@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero'
 import Category from './components/Category/Category'
 import Services from './components/Services/Services'
 import Products from './components/Products/Products'
+import Products2 from './components/Products/Products2'
 import Blogs from './components/Blogs/Blogs'
 import Partners from './components/Partners/Partners'
 import Footer from './components/Footer/Footer'
@@ -14,8 +15,10 @@ const App = () => {
       <Navbar />
       <Hero />
       <Category />
-      <Services />
       <Products />
+      <Services />
+      <Products2 />
+      <Services />
       <Blogs />
       <Partners />
       <Footer />
