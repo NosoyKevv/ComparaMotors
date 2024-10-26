@@ -29,7 +29,7 @@ const Blogs = () => {
       <div className="container"> 
         {/* Header seccion */}
       <Heading title="Últimas Noticias" 
-               subtitle={"leé"}/>
+               subtitle={"Infórmate"}/>
     
       {/* Blogs seccion */}
         <div className='grid grid-cols-1 sm:grid-cols-2 
