@@ -1,9 +1,9 @@
 import React from 'react'
 import Heading from '../Shared/Heading'
 //images blogs
-import Img1 from "../../assets/blogs/2.avif"
-import Img2 from "../../assets/blogs/3.avif"
-import Img3 from "../../assets/blogs/1.png"
+import Img1 from "../../assets/Blogs/2.avif"
+import Img2 from "../../assets/Blogs/3.avif"
+import Img3 from "../../assets/Blogs/1.png"
 
 const BlogData = [
     {
