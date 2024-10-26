@@ -2,8 +2,8 @@ import React from 'react'
 import Heading from '../Shared/Heading'
 //images blogs
 import Img1 from "../../assets/blogs/1.png"
-import Img2 from "../../assets/blogs/1.png"
-import Img3 from "../../assets/blogs/1.png"
+import Img2 from "../../assets/blogs/2.png"
+import Img3 from "../../assets/blogs/3.png"
 
 const BlogData = [
     {
@@ -16,13 +16,13 @@ const BlogData = [
         title: "Septiembre, el mes de 2024 en el que más vehículos nuevos se vendieron, con 17.117",
         subtitle: "Durante septiembre del 2024, el sector automotor vendió 17.117 vehículos nuevos, un aumento del 10,3% respecto a septiembre del 2023 y una disminución del 28% respecto a septiembre del 2022, según datos entregados por la Federación Nacional de Comerciantes de Colombia (Fenalco) y la Asociación Nacional de Industriales (Andi).",
         published: "26/10/2024 by Kevin Lázaro",
-        image: Img1,
+        image: Img2,
     },
     {
         title: "Pico y Placa en Bogotá: qué carros no circulan este viernes 25 de octubre de 2024",
         subtitle: "Ahora, los vehículos particulares con terminación 1, 2, 3, 4 o 5 no circularán los días pares. Mientras que aquellos que finalicen en 6, 7, 8, 9 u 0 no podrán transitar los días impares.",
         published: "26/10/2024 by Kevin Lázaro",
-        image: Img1,
+        image: Img3,
     },
 ]
 const Blogs = () => {
