@@ -2,23 +2,21 @@ import React from 'react'
 import { IoMdSearch } from "react-icons/io"
 import { FaShoppingCart } from "react-icons/fa"
 import { FaCaretDown } from 'react-icons/fa';
+import { Link } from 'react-router-dom'; // Importar Link
 import DarkMode from './DarkMode'
+import LogoImage from '../../assets/brand/4.png'; // Ajusta la ruta a donde esté tu imagen
 const MenuLinks = [
     {
         id: 1,
         name: "Home",
-        link: "/#",
+        link: "/",
     },
+
     {
         id: 2,
-        name: "Tienda",
-        link: "/#shop",
-    },
-    {
-        id: 3,
         name: "Acerca de",
-        link: "/#about",
-    },
+        link: "/About",
+    }
 
 ]
 
@@ -26,19 +24,14 @@ const DropDownLinks = [
 
     {
         id: 1,
-        name: "Mejores Productos",
-        link: "/#",
+        name: "Noticias Nacionales",
+        link: "/News",
     },
     {
         id: 2,
-        name: "Mas Vendidos",
-        link: "/#",
-    },
-    {
-        id: 3,
-        name: "Mejor Calificados",
-        link: "/#",
-    },
+        name: "Noticias Internacionales ",
+        link: "/News",
+    }
 ]
 const Navbar = () => {
   return (
@@ -51,13 +44,11 @@ const Navbar = () => {
             <div className="container flex justify-between items-center"> 
                 {/*Logo y links */}
                 <div className="flex items-center gap-4">
-                    <a href="#"
-                    className="text-primary font-semibold 
-                    tracking-widest 
-                    text-2xl uppercase sm:text-3xl"
+                <a href="#" className="flex items-center">
+  {/* Logo de la empresa */}
+  <img src={LogoImage} alt="ComparaMotors" className="w-[150px] sm:w-[200px]" /> {/* Ajusta el tamaño aquí */}
+</a>
 
-                    >ComparaMotors
-                    </a>
                     {/* Menu items*/}
                     <div className="hidden lg:block">
                         <ul className="flex items-center gap-4">
