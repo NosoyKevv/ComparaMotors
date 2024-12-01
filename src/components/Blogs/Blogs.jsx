@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
 import Heading from '../Shared/Heading';
 // Images blogs
 import Img1 from "../../assets/blogs/1.png";
 import Img2 from "../../assets/blogs/2.png";
 import Img3 from "../../assets/blogs/3.png";
+=======
+import React from 'react'
+import Heading from '../Shared/Heading'
+//images blogs
+import Img1 from "../../assets/Blogs/1.png"
+import Img2 from "../../assets/Blogs/2.png"
+import Img3 from "../../assets/Blogs/3.png"
+>>>>>>> 78c0188d15fe29b8672dc956c646b5cffb4e92f0
 
 const BlogData = [
     {
